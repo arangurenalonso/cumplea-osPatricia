@@ -1,0 +1,37 @@
+.boxAudio{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    height: 50px;
+    padding: 10px;
+    &-contenido{
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        img{
+            height: 100%;
+            cursor: pointer;
+        }
+        p{
+            
+            font-size: 20px;
+        }
+    }
+}
+.contenedorAudios{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+    padding-top: 100px;
+}
+.tituloSerenata{
+    color: #a17834;
+    text-align: center;
+    font-size: 25px;
+    text-decoration: underline;
+}

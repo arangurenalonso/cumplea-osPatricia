@@ -1,0 +1,18 @@
+@import 'textoanimado';
+@import 'universal';
+@import 'video';
+@import 'carrusel3D';
+@import 'card';
+@import '_audio';
+.contenedorAll{
+    display: flex;
+    width: 1100px;
+    margin: auto;
+    padding-top: 55px;
+}
+
+
+
+.ocultar{
+    display: none;
+}

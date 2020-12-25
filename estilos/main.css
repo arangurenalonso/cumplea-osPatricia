@@ -1,0 +1,351 @@
+/*Referencia: https://www.youtube.com/watch?v=UWeFaJtqhxk&t=18s*/
+.titulo {
+  width: 100%;
+  height: 80px;
+  font-size: 40px;
+  line-height: 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  font-family: 'Miltonian', cursive;
+  font-weight: 0;
+}
+
+.titulo ul {
+  list-style: none;
+  -webkit-animation: cambiar 7s infinite;
+          animation: cambiar 7s infinite;
+}
+
+.titulo ul, .titulo p {
+  margin: 0;
+}
+
+@-webkit-keyframes cambiar {
+  0% {
+    margin-top: 0;
+  }
+  12% {
+    margin-top: 0;
+  }
+  17% {
+    margin-top: -5vw;
+  }
+  29% {
+    margin-top: -5vw;
+  }
+  34% {
+    margin-top: -10vw;
+  }
+  46% {
+    margin-top: -10vw;
+  }
+  51% {
+    margin-top: -15vw;
+  }
+  63% {
+    margin-top: -15vw;
+  }
+  68% {
+    margin-top: -10vw;
+  }
+  80% {
+    margin-top: -10vw;
+  }
+  85% {
+    margin-top: -5vw;
+  }
+  97% {
+    margin-top: -5vw;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+@keyframes cambiar {
+  0% {
+    margin-top: 0;
+  }
+  12% {
+    margin-top: 0;
+  }
+  17% {
+    margin-top: -5vw;
+  }
+  29% {
+    margin-top: -5vw;
+  }
+  34% {
+    margin-top: -10vw;
+  }
+  46% {
+    margin-top: -10vw;
+  }
+  51% {
+    margin-top: -15vw;
+  }
+  63% {
+    margin-top: -15vw;
+  }
+  68% {
+    margin-top: -10vw;
+  }
+  80% {
+    margin-top: -10vw;
+  }
+  85% {
+    margin-top: -5vw;
+  }
+  97% {
+    margin-top: -5vw;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #b7b7b7;
+}
+
+.boxVideo {
+  width: 50%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.boxVideo-mainImg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.boxVideo video {
+  width: 80%;
+  height: 100%;
+}
+
+.boxVideo video source {
+  width: 100%;
+  height: 100%;
+}
+
+.parteder {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  width: 400px;
+  height: 310px;
+  position: relative;
+  margin: auto;
+  -webkit-perspective: 1100px;
+          perspective: 1100px;
+  -webkit-perspective-origin: top;
+          perspective-origin: top;
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-animation: rotateInY 10s infinite linear;
+          animation: rotateInY 10s infinite linear;
+}
+
+.carousel:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.carousel-figura {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #ccc;
+  border: 15px solid rgba(0, 0, 0, 0.5);
+  -webkit-transition: ease 1s;
+  transition: ease 1s;
+  padding: 10px;
+}
+
+.carousel-figura:hover {
+  border: 15px solid rgba(0, 0, 0, 0.8);
+}
+
+.carousel-figura:hover .card-Titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@-webkit-keyframes rotateInY {
+  0% {
+    -webkit-transform: translateZ(-288px) rotateY(0deg);
+            transform: translateZ(-288px) rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: translateZ(-288px) rotateY(360deg);
+            transform: translateZ(-288px) rotateY(360deg);
+  }
+}
+
+@keyframes rotateInY {
+  0% {
+    -webkit-transform: translateZ(-288px) rotateY(0deg);
+            transform: translateZ(-288px) rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: translateZ(-288px) rotateY(360deg);
+            transform: translateZ(-288px) rotateY(360deg);
+  }
+}
+
+.card-Contenedor {
+  width: 100%;
+  height: 100%;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.card-Titulo {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: ease 1s;
+  transition: ease 1s;
+  background: -webkit-gradient(linear, right top, left top, from(#eee), to(#cdb793));
+  background: linear-gradient(to left, #eee, #cdb793);
+  opacity: 0.8;
+  padding: 2.5px 10px 2.5px 10px;
+  display: none;
+}
+
+.card-Titulo h2 {
+  font-size: 45px;
+  color: #333;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  -webkit-transition: ease 1s;
+  transition: ease 1s;
+}
+
+.card-Titulo img {
+  height: 100%;
+  cursor: pointer;
+}
+
+.boxAudio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 300px;
+  height: 50px;
+  padding: 10px;
+}
+
+.boxAudio-contenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.boxAudio-contenido img {
+  height: 100%;
+  cursor: pointer;
+}
+
+.boxAudio-contenido p {
+  font-size: 20px;
+}
+
+.contenedorAudios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+}
+
+.tituloSerenata {
+  color: #a17834;
+  text-align: center;
+  font-size: 25px;
+  text-decoration: underline;
+}
+
+.contenedorAll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1100px;
+  margin: auto;
+  padding-top: 55px;
+}
+
+.ocultar {
+  display: none;
+}
+/*# sourceMappingURL=main.css.map */
