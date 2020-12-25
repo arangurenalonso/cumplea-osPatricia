@@ -275,7 +275,10 @@ function ReproduciraudioInicial(){
               `;
   document.body.append(boxAudioInicial)
   const audio = document.querySelector(".audioinicial");
-  playAudioInicial(audio);
+  audio.addEventListener('click',()=>{
+    playAudioInicial(audio);
+  } )
+ audio.click();
 }
 
 function playAudioInicial(audio){
